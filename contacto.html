@@ -7,23 +7,12 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/flex_2.css">
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DBYQJZ8JJ"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7DBYQJZ8JJ');
-    </script>
-
 </head>
 <body>
     <!-- Encabezado y Navegación -->
     <header id="header">
         <nav>
-            <img src="img/logo.svg" alt="Bienvenidos a la Librería, Tienda Online">
+            <a href="index.html"><img src="img/logo.svg" alt="Bienvenidos a la Librería, Tienda Online"></a>
             <ul>
                 <li><a href="#">Catálogo</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
@@ -39,20 +28,20 @@
         </nav>
     </header>
     <section id="contacto">
-        <form action="exito.html" method="POST" enctype="multipart/form-data">
+        <form action="exito.html" enctype="multipart/form-data" method="GET">
             <label>Nombre
-                <input type="text" name="nombre" maxlength="20" value="" placeholder="Ingrese su nombre" autofocus>
+                <input type="text" maxlength="20" value="" placeholder="Ingrese su nombre" autofocus>
             </label>
             <br>
             <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" maxlength="20" value="" placeholder="Ingrese su apellido">
+            <input type="text" maxlength="20" value="" placeholder="Ingrese su apellido">
             <br>
             <label>E-Mail
-                <input type="email" name="email" value="" maxlength="40" required placeholder="Ingrese su email: mail@dominio.com, mail@dominio" multiple>
+                <input type="email" maxlength="40" required placeholder="Ingrese su email: mail@dominio.com, mail@dominio" multiple>
             </label>
             <br>
             <label>Su mensaje:
-                <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+                <textarea placeholder="Ingrese su mensaje"></textarea>
             </label>
             <br>
             <input class="submit" type="submit" value="Enviar">
